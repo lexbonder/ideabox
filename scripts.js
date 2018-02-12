@@ -122,30 +122,6 @@ function persistEdit() {
   console.log(parentArticle.children('.user-idea').text());
 }
 
-// function persistTextEdit() {
-//   console.log(this);
-//   var parentArticle = $(event.target).closest('article');
-//   var id = parentArticle.prop('id');
-//   var newText = parentArticle.children('p').text();
-//   var objectFromLocal = localStorage.getItem(id);
-//   var object = JSON.parse(objectFromLocal);
-//   object.idea = newText;
-//   var objectString = JSON.stringify(object);
-//   localStorage.setItem(id, objectString);
-// };
-
-function persistTitleEdit() {
-  console.log(this);
-  var parentArticle = $(event.target).closest('article');
-  var id = parentArticle.prop('id');
-  var newTitle = parentArticle.children('h1').text();
-  var objectFromLocal = localStorage.getItem(id);
-  var object = JSON.parse(objectFromLocal);
-  object.title = newTitle;
-  var objectString = JSON.stringify(object);
-  localStorage.setItem(id, objectString);
-};
-
 function printSearchResults(searchedArray) {
   searchedArray.forEach(function(result) {
     createCard(result);
@@ -160,5 +136,8 @@ function runSearch(newArray) {
   printSearchResults(searchedArray);
 };
 
-
-
+function sendCardToLocalStorage(titleInput, ideaInput, dateNow) {
+  var ideaCard = new IdeaCard(titleInput, ideaInput, dateNow);
+  var stringIdeaCard = JSON.stringify(ideaCard);
+  localStorage.setItem(dateNow, stringIdeaCard);
+};
