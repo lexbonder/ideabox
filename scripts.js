@@ -32,9 +32,11 @@ function createCard(card) {
   <h1 class="user-idea" contenteditable="true">${card.title}</h1>
   <button class="delete-button" aria-label="Delete Button"></button>
   <p class="user-idea-details" contenteditable="true">${card.idea}</p>
+  <div class='quality-container'>
   <button class="upvote-button" aria-label="upvote button"></button>
   <button class="downvote-button" aria-label="downvote button"></button>
   <h2>quality: <span class="rating">${ratingArray[card.counter]}</span></h2>
+  </div>
   <hr>
   </article>`);
 };

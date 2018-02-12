@@ -139,10 +139,13 @@ p:focus {
 }
 
 .idea-card h1 {
+  text-align: left;
   font-size: 1.5em;
+  width: 91%;
 }
 
 .idea-card h2 {
+  width: fit-content;
   font-size: 1em;
 }
 
@@ -153,7 +156,6 @@ p:focus {
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
   margin: 0px;
-  width: 91%;
 }
 
 .idea-card .rating,
@@ -180,6 +182,7 @@ p:focus {
 .idea-card button {
   border: none;
   cursor: pointer;
+  display: inline-block;
   height: 30px;
   margin: 0 5px 0 0;
   vertical-align: middle;
