@@ -7,3 +7,15 @@ This was our first experience with local storage. All cards and any changes made
 [Project Spec](http://frontend.turing.io/projects/ideabox.html)
 
 ## Screenshots
+
+#### Homepage
+
+![IdeaBox homepage](screenshots/ideabox-blank.png)
+
+#### With cards
+
+![IdeaBox with cards added](screenshots/ideabox-with-cards.png)
+
+#### Mobile
+
+![IdeaBox in moblie layout](screenshots/ideabox-mobile.png)
