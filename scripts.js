@@ -8,9 +8,9 @@ var ratingArray = ['Swill', 'Plausible', 'Genius'];
 
 $(document).ready(function() {
   for (let i = 0; i < localStorage.length; i++) {
-  var retrievedObject = localStorage.getItem(localStorage.key(i));
-  var parsedObject = JSON.parse(retrievedObject);
-  createCard(parsedObject.id, parsedObject.title, parsedObject.idea, parsedObject.counter);
+    var retrievedObject = localStorage.getItem(localStorage.key(i));
+    var parsedObject = JSON.parse(retrievedObject);
+    createCard(parsedObject.id, parsedObject.title, parsedObject.idea, parsedObject.counter);
   };
 });
 
@@ -67,11 +67,11 @@ $('.idea-card-wrap').on('click', '.delete-button', function(event) {
   deleteCard(event);
 });
 
-$('.idea-card-wrap').on('blur', 'p', function(event){
+$('.idea-card-wrap').on('blur', 'p', function(event) {
   persistTextEdit(event);
 });
 
-$('.idea-card-wrap').on('blur', 'h1', function(event){
+$('.idea-card-wrap').on('blur', 'h1', function(event) {
   persistTitleEdit(event);
 });
 
@@ -90,7 +90,7 @@ function arrayOfLocalStorage() {
   runSearch(newArray);
 };
 
-function createCard(id,title,idea,counter = 0) {
+function createCard(id, title, idea, counter = 0) {
   $('.idea-card-wrap').prepend(`<article id="${id}" class="idea-card">
   <h1 class="user-idea" contenteditable="true">${title}</h1>
   <button class="delete-button" aria-label="Delete Button"></button>
@@ -153,7 +153,7 @@ function runSearch(newArray) {
   printSearchResults(searchedArray);
 };
 
-function sendCardToLocalStorage(titleInput, ideaInput, dateNow){
+function sendCardToLocalStorage(titleInput, ideaInput, dateNow) {
   var ideaCard = new IdeaCard(titleInput, ideaInput, dateNow);
   var stringIdeaCard = JSON.stringify(ideaCard);
   localStorage.setItem(dateNow, stringIdeaCard);
