@@ -18,4 +18,4 @@ This was our first experience with local storage. All cards and any changes made
 
 #### Mobile
 
-![IdeaBox in moblie layout](screenshots/ideabox-mobile.png)
+![IdeaBox in moblie layout](screenshots/ideabox-mobile.png =400x)
