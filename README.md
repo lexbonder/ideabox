@@ -1,4 +1,4 @@
-# IdeaBox - Alex Bonder and Melena Suliteanu - (FE Module 1)
+# IdeaBox - Alex Bonder, Melena Suliteanu - (FE Module 1)
 
 ## Synopsis
 
