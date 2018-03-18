@@ -1,21 +1,23 @@
 # IdeaBox - Alex Bonder and Melena Suliteanu - (FE Module 1)
 
-IdeaBox is a paired project which generates idea cards based on user input. The user can then toggle the quality of the idea, use the search bar to filter cards based on the text inside of them, and edit the text directly on the cards. We were also required to adhere to the comp provided by the teachers and include responsiveness.
+## Synopsis
 
-This was our first experience with local storage. All cards and any changes made to them persist after page refresh.
+IdeaBox is a paired project which generates idea cards based on user input. The user can then toggle the quality of the idea, use the search bar to filter cards based on the text inside of them, and edit the text directly on the cards.
 
 [Project Spec](http://frontend.turing.io/projects/ideabox.html)
 
+## Project Goals
+
+* Learn and implement use of local storage.
+* Improve technique involving DOM manipulation and event bubbling.
+* Adhere to project comp.
+
+## Installation
+
+Fork or clone this project
+
+Open `index.html` in the browser
+
 ## Screenshots
 
-#### Homepage
-
-![IdeaBox homepage](screenshots/ideabox-blank.png)
-
-#### With cards
-
 ![IdeaBox with cards added](screenshots/ideabox-with-cards.png)
-
-#### Mobile
-
-![IdeaBox in moblie layout](screenshots/ideabox-mobile.png)
